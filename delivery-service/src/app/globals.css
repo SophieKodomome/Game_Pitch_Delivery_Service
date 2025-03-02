@@ -1,24 +1,50 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Shin-Go-Pro';
+  src: url('/fonts/shin-go-pro/AOTFSHINGOPROREGULAR.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Keyute';
+  src: url('/fonts/keyute/KEYUTE.TTF') format('truetype'); /* Corrected format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-shin {
+  @apply font-[Shin-Go-Pro];
+}
+
+.font-keyute {
+  @apply font-[Keyute];
+}
+
+
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --my-white:#faf5f5;
+  --my-black:#0f0f0f;
+  --my-primary:#2580d4;
+  --background: var(--my-white);
+  --foreground: var(--my-black);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--my-white);
+    --foreground: var(--my-black);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Shin-Go-Pro','Keyute',Arial, Helvetica, sans-serif;
 }
