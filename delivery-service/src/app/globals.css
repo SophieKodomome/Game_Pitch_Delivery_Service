@@ -14,12 +14,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Keyute-Outline';
+  src: url('/fonts/keyute/KEYUTE OUTLINE.TTF') format('truetype'); /* Corrected format */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .font-shin {
   @apply font-[Shin-Go-Pro];
 }
 
 .font-keyute {
   @apply font-[Keyute];
+}
+
+.font-keyute-outline {
+  @apply font-[Keyute-Outline];
 }
 
 
@@ -46,5 +57,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Shin-Go-Pro','Keyute',Arial, Helvetica, sans-serif;
+  font-family: 'Shin-Go-Pro','Keyute','Keyute-Outline',Arial, Helvetica, sans-serif;
 }
+
+
