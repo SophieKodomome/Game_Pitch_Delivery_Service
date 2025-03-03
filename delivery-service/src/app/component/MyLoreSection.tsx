@@ -1,10 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import SplitType from "split-type";
 
-export default function MyGameplaySection() {
+export default function MyLoreSection() {
   gsap.registerPlugin(ScrollTrigger); // ✅ Register ScrollTrigger
   const sectionsRef = useRef(null);
 
@@ -42,20 +42,24 @@ export default function MyGameplaySection() {
         toggleActions: "play none none reverse",
       },
     });
-
   }, []);
 
   return (
-    <section ref={sectionsRef} className="gameplay-section mb-16">
+    <section ref={sectionsRef} className="mb-16">
       <header className="mb-8">
-        <h1 className="font-keyute-shadow text-[var(--my-primary)] text-6xl">Gameplay</h1>
+        <h1 className="font-keyute-shadow text-[var(--my-primary)] text-6xl">
+          Univers
+        </h1>
       </header>
       <article id="text" className="w-3/6">
-        Le jeu est un 2.5D (susceptible de changement) Speed Platformer (Sonic,
-        Céleste, Pizza Tower) qui se découpe en niveaux à longueur moyenne. Le
-        but du jeu à court terme (dans un niveau), est de livrer un colis à une
-        adresse en un temps donné. La note sera déterminée en 3 points : le temps
-        de livraison, l'état du colis, et la performance du joueur via des tricks.
+        L'agence de livraison familiale se retrouve endettée par les manigances
+        d'un vazimba fallacieux et agent en immobilier. N'ayant pas les moyens
+        pour une moto ou même un simple vélo, vous êtes chargé de livrer tous
+        les colis des particuliers et des commerces locaux en un temps record à
+        PIED. Heureusement, l'école buissonnière vous a appris à faire du
+        parcours et vous connaissez aussi bien la ville que votre poche trouée.
+        Mais est ce que ca sera suffisant pour sauver votre agence et le
+        commerce local de la main du terrible saisie immobilière?
       </article>
     </section>
   );

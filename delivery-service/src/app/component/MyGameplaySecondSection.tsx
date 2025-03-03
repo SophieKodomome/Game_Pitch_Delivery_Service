@@ -15,7 +15,7 @@ export default function MyGameplaySecondSection() {
       stagger: 0.3, // ✅ Stagger animation between sections
       scrollTrigger: {
         trigger: sectionsRef.current,
-        start: "top 60%",
+        start: "top 80%",
         toggleActions: "play none none reverse", // ✅ Play on scroll, reverse on scroll up
       },
     });
