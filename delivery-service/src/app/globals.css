@@ -8,6 +8,14 @@
 }
 
 @font-face {
+  font-family: 'Shin-Go-Pro';
+  src: url('/fonts/shin-go-pro/AOTFSHINGOPROREGULAR.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'Keyute';
   src: url('/fonts/keyute/KEYUTE.TTF') format('truetype'); /* Corrected format */
   font-weight: normal;
@@ -17,6 +25,13 @@
 @font-face {
   font-family: 'Keyute-Outline';
   src: url('/fonts/keyute/KEYUTE OUTLINE.TTF') format('truetype'); /* Corrected format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Keyute-Shadow';
+  src: url('/fonts/keyute/KEYUTE SHADOW.TTF') format('truetype'); /* Corrected format */
   font-weight: normal;
   font-style: normal;
 }
@@ -31,6 +46,10 @@
 
 .font-keyute-outline {
   @apply font-[Keyute-Outline];
+}
+
+.font-keyute-shadow {
+  @apply font-[Keyute-Shadow];
 }
 
 
@@ -57,7 +76,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Shin-Go-Pro','Keyute','Keyute-Outline',Arial, Helvetica, sans-serif;
+  font-family: 'Shin-Go-Pro','Keyute','Keyute-Outline','Keyute-Shadow',Arial, Helvetica, sans-serif;
 }
 
 
