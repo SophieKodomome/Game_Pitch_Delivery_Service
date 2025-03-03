@@ -10,7 +10,7 @@ export default function MyLoreSection() {
 
   useGSAP(() => {
     // ✅ Splitting Text into Words
-    const text = new SplitType("#text", { types: "words" });
+    const text = new SplitType("#lore", { types: "words" });
 
     // ✅ Hover Effect on Words
     text.words.forEach((word) => {
@@ -51,7 +51,7 @@ export default function MyLoreSection() {
           Univers
         </h1>
       </header>
-      <article id="text" className="w-3/6">
+      <article id="lore" className="w-3/6">
         L'agence de livraison familiale se retrouve endettée par les manigances
         d'un vazimba fallacieux et agent en immobilier. N'ayant pas les moyens
         pour une moto ou même un simple vélo, vous êtes chargé de livrer tous
